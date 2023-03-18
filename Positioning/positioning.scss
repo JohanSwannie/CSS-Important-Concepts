@@ -1,0 +1,41 @@
+
+@mixin randomBackground(){
+    background: rgb(random(255), random(255), random(255));
+  }
+
+  body {
+    background-color: #000;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem 2rem; 
+    width: 44%;
+    margin: 7% 25%;
+    border: 1px solid #FFF;
+    padding: 2rem;
+    background-color: rgb(87, 87, 107);
+  }
+  
+  .item {
+    display: flex; 
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 8px solid #FFF;
+    border-style: double;
+    color: #000;
+  }
+
+.container .item {
+    @for $i from 0 to 13 {
+      &:nth-child(#{$i}) {
+        @include randomBackground();
+      }
+    }
+  }

@@ -1,0 +1,68 @@
+body {
+  background-color: #000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem 2rem;
+  width: 44%;
+  margin: 7% 25%;
+  border: 1px solid #FFF;
+  padding: 2rem;
+  background-color: rgb(87, 87, 107);
+}
+
+.item {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 8px solid #FFF;
+  border-style: double;
+  color: #000;
+}
+
+.container .item:nth-child(0) {
+  background: rgb(189, 254, 245);
+}
+.container .item:nth-child(1) {
+  background: rgb(101, 115, 4);
+}
+.container .item:nth-child(2) {
+  background: rgb(53, 84, 66);
+}
+.container .item:nth-child(3) {
+  background: rgb(152, 159, 248);
+}
+.container .item:nth-child(4) {
+  background: rgb(123, 178, 219);
+}
+.container .item:nth-child(5) {
+  background: rgb(58, 9, 50);
+}
+.container .item:nth-child(6) {
+  background: rgb(247, 175, 222);
+}
+.container .item:nth-child(7) {
+  background: rgb(37, 68, 16);
+}
+.container .item:nth-child(8) {
+  background: rgb(93, 228, 5);
+}
+.container .item:nth-child(9) {
+  background: rgb(64, 165, 141);
+}
+.container .item:nth-child(10) {
+  background: rgb(109, 192, 56);
+}
+.container .item:nth-child(11) {
+  background: rgb(44, 126, 252);
+}
+.container .item:nth-child(12) {
+  background: rgb(72, 251, 93);
+}/*# sourceMappingURL=positioning.css.map */

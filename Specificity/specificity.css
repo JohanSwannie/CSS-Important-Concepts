@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Specificity works on the 4 zeros with fill ins principal where the 1st parameter
+is inline styles, the 2nd parameter is id's, the 3rd parameter is classes and the 
+4th parameter is elements, therefor inline styling will be 1, 0, 0, 0 - id's will be
+0, 1, 0, 0 - classes will be 0, 0, 1, 0 and elements will be 0, 0, 0, 1 */
+
+
+/* Because id's are more specific than classes the header color will be green and not
+change to crimson as specified in the .header-class below */
+
+#header-id {
+    color: green;
+}
+
+.header-class {
+    text-align: center;
+    text-decoration: underline;
+    color: crimson;
+    margin-bottom: 1.5rem;
+}
+
+/* although h1 selector are on same level as .header class, the .header class due 
+specificity enjoys preference above the h1 element, */
+
+h1 {
+    color: green;
+}
+
+/* Imagine the id on the header are missing, then class .header-class2 will now overwrite
+the crimson color of class .header-class, because it is also a 0, 0, 1, 0 specificity */
+
+.header-class2 {
+    color: rebeccapurple;
+}
+
+/* With an element combined with the class .header-class the specificity change to 0, 0, 1, 1
+This means that when the id is absent on the same header, the color yellow will be used
+in this case because 0, 0, 1, 1 is more specific than 0, 0, 1, 0 */
+
+h1.header-class {
+    color: yellow;
+}
+
+/* The inline style in the HTML, specified a color of darkblue, therefore it has a 
+specificity of 1, 0, 0, 0 which is higher thatn the specificity of 0, 0, 1, 0 
+in the class .text below */
+
+.text {
+    color: navy;
+}
+
+/* The only thing that overwrites all specificity is the !important keyword in CSS */
+
+.header-class {
+    color: skyblue !important;
+}

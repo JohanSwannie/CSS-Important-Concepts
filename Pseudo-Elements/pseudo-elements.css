@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+.label::before {
+    content: ' * ';
+}
+
+.label::after {
+    content: ' * ';
+}
+
+[description] {
+    position: relative;
+}
+
+[description]:hover::after {
+    content: attr(description);
+    position: absolute;
+    top: 100%;
+    left: -12px;
+    right: -12px;
+    padding: .5rem;
+    background-color: crimson;
+    color: #FFF;
+}
+
+input[type="text"] {
+    margin-right: 1rem;;
+}
+
+button {
+    padding: 1rem;
+}
+
+#tipper {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkgreen;
+    top: 50%;
+    left: 33%;
+}
+
