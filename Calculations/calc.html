@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" />
+    <title>CSS Calculations</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">Button Magic</div>
+      <div class="buttons">
+        <button class="primary" onclick="primary()">Primary</button>
+        <button class="danger" onclick="danger()">Danger</button>
+      </div>
+      <p id="primary"></p>
+      <p id="danger"></p>
+    </div>
+  </body>
+  <script>
+    const primary = () => {
+      document.getElementById("primary").innerText = "I am a primary button";
+      setTimeout(() => {
+        document.getElementById("primary").innerText = "";
+      }, 3000);
+    };
+    const danger = () => {
+      document.getElementById("danger").innerText = "I am a danger button";
+      setTimeout(() => {
+        document.getElementById("danger").innerText = "";
+      }, 3000);
+    };
+  </script>
+</html>
