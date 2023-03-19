@@ -8,15 +8,44 @@
     <title>CSS Variables</title>
   </head>
   <body>
-    <div class="container">
-      <div class="sub-container sub-container1">container1</div>
-      <div class="sub-container sub-container2">container2</div>
-      <div class="sub-container sub-container3">container3</div>
-      <div class="sub-container sub-container4">container4</div>
-      <div class="sub-container sub-container5">container5</div>
-      <div class="sub-container sub-container6">container6</div>
-      <div class="sub-container sub-container7">container7</div>
-      <div class="sub-container sub-container8">container8</div>
+    <div class="main-container">
+      <div class="container">
+        <div class="sub-container sub-container1">container1</div>
+        <div class="sub-container sub-container2">container2</div>
+        <div class="sub-container sub-container3">container3</div>
+        <div class="sub-container sub-container4">container4</div>
+        <div class="sub-container sub-container5">container5</div>
+        <div class="sub-container sub-container6">container6</div>
+        <div class="sub-container sub-container7">container7</div>
+        <div class="sub-container sub-container8">container8</div>
+      </div>
+      <div class="buttons">
+        <button class="darkTheme">Dark Theme</button>
+        <button class="lightTheme">Light Theme</button>
+      </div>
     </div>
   </body>
+  <script>
+    // Get value of a variable in CSS with Javascript
+
+    const bgColor = window
+      .getComputedStyle(document.documentElement)
+      .getPropertyValue("--common-background-color");
+
+    //   Change between dark and light themes
+
+    document.querySelector(".darkTheme").addEventListener("click", () => {
+      document.documentElement.style.setProperty(
+        "--common-background-color",
+        "#000"
+      );
+    });
+
+    document.querySelector(".lightTheme").addEventListener("click", () => {
+      document.documentElement.style.setProperty(
+        "--common-background-color",
+        "#FFF"
+      );
+    });
+  </script>
 </html>
