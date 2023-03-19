@@ -1,5 +1,6 @@
 :root {
-    --common-background-color: skyblue;
+    --common-background-color: rgb(136, 150, 155);
+    --body-background-color: rgb(234, 234, 208);
     --sub-background-color: navy;
     --main-text-color: #000;
     --extra-text-color: #FFF;
@@ -15,13 +16,21 @@
 
 /* Fall back on additional color when variable doesn't exist */
 
-body {
+/* body {
     background-color: var(--body-background-color, papayawhip);
+} */
+
+body {
+    background-color: var(--body-background-color);
 }
+
+.main-container {
+    background-color: var(--common-background-color);
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: var(--common-background-color);
     width: 80vw;
     margin: 3% calc(var(--common-margin) * 10);
     padding: var(--common-padding);
@@ -37,8 +46,9 @@ body {
     font-weight: bold;
     border: 3px solid var(--main-text-color);
     width: 10vw;
-    height: 10rem;
+    height: 6rem;
     margin: 5vw;
+    border: 2px solid #FFF;
 }
 
 .sub-container5 {
@@ -50,3 +60,20 @@ body {
     --extra-text-color: rgb(255, 200, 100);
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    margin: 2rem calc(var(--common-margin) * 25);
+}
+
+button {
+    width: 20vw;
+    height: 7vh;
+    margin-right: 10vw;
+    background-color: crimson;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
