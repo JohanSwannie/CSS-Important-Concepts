@@ -1,0 +1,47 @@
+:root {
+    --common-background-color: skyblue;
+    --sub-background-color: navy;
+    --main-text-color: #000;
+    --extra-text-color: #FFF;
+    --common-padding: .25rem;
+    --common-margin: 1vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--common-background-color);
+    width: 80vw;
+    margin: 3% calc(var(--common-margin) * 10);
+    padding: var(--common-padding);
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sub-background-color);
+    color: var(--extra-text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid var(--main-text-color);
+    width: 10vw;
+    height: 10rem;
+    margin: 5vw;
+}
+
+.sub-container5 {
+    --sub-background-color: steelblue;
+}
+
+.sub-container7 {
+    --sub-background-color: #000;
+    --extra-text-color: rgb(255, 200, 100);
+}
+
