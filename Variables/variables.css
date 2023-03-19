@@ -1,7 +1,8 @@
 :root {
-    --common-background-color: rgb(136, 150, 155);
+    --common-background-color: rgb(74, 196, 240);
     --body-background-color: rgb(234, 234, 208);
-    --sub-background-color: navy;
+    --even-child-background-color: navy;
+    --odd-child-background-color: darkorange;
     --main-text-color: #000;
     --extra-text-color: #FFF;
     --common-padding: .25rem;
@@ -30,7 +31,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     width: 80vw;
     margin: 3% calc(var(--common-margin) * 10);
     padding: var(--common-padding);
@@ -40,24 +41,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--sub-background-color);
     color: var(--extra-text-color);
-    font-size: 1.2rem;
+    font-size: .85rem;
     font-weight: bold;
     border: 3px solid var(--main-text-color);
-    width: 10vw;
-    height: 6rem;
-    margin: 5vw;
+    width: 7vw;
+    height: 4rem;
+    margin: 2vw 1vw;
     border: 2px solid #FFF;
 }
 
-.sub-container5 {
-    --sub-background-color: steelblue;
+.sub-container:nth-child(even) {
+    background-color: var(--even-child-background-color);
 }
 
-.sub-container7 {
-    --sub-background-color: #000;
-    --extra-text-color: rgb(255, 200, 100);
+.sub-container:nth-child(odd) {
+    background-color: var(--odd-child-background-color);
 }
 
 .buttons {
