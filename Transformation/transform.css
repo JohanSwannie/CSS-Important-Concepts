@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    grid-gap: 12rem 30vw;
+    margin: 3vh 5vw;
+}
+
+.container {
+    display: flex;
+    width: 10vw;
+    height: 8rem;
+    background-color: blue;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* transform: rotate(.25turn); same as 90 degrees */
+
+.container1 {
+    transform: rotate(90deg);
+}
+
+/* enlarge the x axis of container by .1 and decrease the y axis by .25
+transform: scaleX(1.5) will enlarge the x axis of the container by .5
+transform: scaleY(.5) will decrease the y axis of the container by .5 */
+
+.container2 {
+    transform: scale(1.1, .75);  
+}
+
+/* move the container 2rem to the left and 4rem downwards
+transform: translateX(2rem) will move the container 2rem to the right
+transform: translateY(-5rem) will move the container 5rem upwards
+transform: translateX(100%) will move the box 100% of it's width to the right
+transform: translateY(100%) will move the box 100% if it's height upwards */
+
+.container3 {
+    transform: translate(-2rem, 4rem);
+}
+
+/* skew the container by 30deg on the x axis and by 15 degrees on the y axis */
+
+.container4 {
+    transform: skew(30deg, 15deg);
+}
+
+
+
