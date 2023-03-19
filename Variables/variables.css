@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+/* Fall back on additional color when variable doesn't exist */
+
+body {
+    background-color: var(--body-background-color, papayawhip);
+}
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
