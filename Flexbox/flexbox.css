@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: papayawhip;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    border: 2px solid gray;
+    margin: 5vh auto;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(2, 38, 2);
+    color: white;
+    font-weight: bold;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Note - align-content only works when flex-wrap is set to wrap */
+/* When flex-wrap is set to wrap, the flex boxes will hold their sizes */
+ 
+.container {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: baseline; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* align-items: baseline; */
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: baseline; */
+    gap: .5rem;
+}
+
+.item1 {
+    order: 1;
+}
+
+.item4 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 200px; */
+    /* flex: 0 0 300px; */
+    align-self: flex-end;
+    order: -1;
+}
