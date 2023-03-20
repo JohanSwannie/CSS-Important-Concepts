@@ -8,28 +8,14 @@ body {
     background-color: papayawhip;
 }
 
+/* Note - align-content only works when flex-wrap is set to wrap */
+/* When flex-wrap is set to wrap, the flex boxes will hold their sizes */
+
 .container {
     width: 90%;
     height: 90vh;
     border: 2px solid gray;
     margin: 5vh auto;
-}
-
-.item {
-    width: 150px;
-    height: 150px;
-    background-color: rgb(2, 38, 2);
-    color: white;
-    font-weight: bold;
-    border: 2px solid #000;
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Note - align-content only works when flex-wrap is set to wrap */
-/* When flex-wrap is set to wrap, the flex boxes will hold their sizes */
- 
-.container {
     display: flex;
     flex-direction: row;
     /* flex-direction: column; */
@@ -51,6 +37,18 @@ body {
     /* align-content: flex-end; */
     /* align-content: baseline; */
     gap: .5rem;
+
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(2, 38, 2);
+    color: white;
+    font-weight: bold;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 1rem;
 }
 
 .item1 {
