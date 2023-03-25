@@ -12,22 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="choco.css" />
     <title>Chocolate Magic</title>
   </head>
@@ -100,28 +84,42 @@
     container.addEventListener("click", () => {
       switch (counter) {
         case 1:
-          header.style.color = "steelblue";
-          header.style.fontFamily = "'Tangerine', cursive";
+          document.querySelector(".choco1").style.scale = "1.25";
+          document.querySelector(".choco2").style.scale = ".95";
+          document.querySelector(".choco4").style.scale = ".95";
+          document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 2:
-          header.style.color = "lime";
-          header.style.fontFamily = "'Fredericka the Great', cursive";
+          document.querySelector(".choco2").style.scale = "1.25";
+          document.querySelector(".choco1").style.scale = ".95";
+          document.querySelector(".choco4").style.scale = ".95";
+          document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 3:
-          header.style.color = "rebeccapurple";
-          header.style.fontFamily = "'Style Script', cursive";
+          document.querySelector(".choco4").style.scale = "1.25";
+          document.querySelector(".choco1").style.scale = ".95";
+          document.querySelector(".choco2").style.scale = ".95";
+          document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 4:
-          header.style.color = "crimson";
-          header.style.fontFamily = "'Niconne', cursive";
+          document.querySelector(".choco5").style.scale = "1.25";
+          document.querySelector(".choco1").style.scale = ".95";
+          document.querySelector(".choco2").style.scale = ".95";
+          document.querySelector(".choco4").style.scale = ".95";
           counter = 1;
           break;
         default:
           alert("ERROR");
       }
+    });
+    container.addEventListener("dblclick", () => {
+      document.querySelector(".choco1").style.scale = "1";
+      document.querySelector(".choco2").style.scale = "1";
+      document.querySelector(".choco4").style.scale = "1";
+      document.querySelector(".choco5").style.scale = "1";
     });
   </script>
 </html>
