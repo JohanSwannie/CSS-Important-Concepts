@@ -1,0 +1,77 @@
+:root {
+    --x-axis1: calc((1536px / 2 ) - 250px);
+    --x-axis2: calc((1536px / 2 ) - 175px);
+    --y-axis1: calc((722px / 2 ) - 250px);
+    --y-axis2: calc((722px / 2) - 175px);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choco1, .choco2, .choco4, .choco5 {
+    position: absolute;
+    top: var(--y-axis2);
+    left: var(--x-axis2);
+}
+
+.choco3 {
+    position: absolute;
+    top: var(--y-axis1);
+    left: var(--x-axis1);
+    z-index: 1;
+}
+
+.extrachoco {
+    display: none;
+    position: absolute;
+    top: var(--y-axis2);
+    left: var(--x-axis2);
+    z-index: 2;
+}
+
+.container:hover .choco1 {
+    transform: translate(-700px) rotate(360deg) scale(.75);
+    transition: 4s ease;
+    filter: hue-rotate(4rad);
+}
+
+.container:hover .choco2 {
+    transform: translate(-350px) rotate(360deg);
+    transition: 4s ease;
+    filter: hue-rotate(14rad);
+}
+
+.container:hover .choco4 {
+    transform: translate(350px) rotate(360deg);
+    transition: 4s ease;
+    filter: hue-rotate(14rad);
+}
+
+.container:hover .choco5 {
+    transform: translate(700px) rotate(360deg) scale(.75);
+    transition: 4s ease;
+    filter: hue-rotate(4rad);
+}
+
+.container:hover .heading {
+    scale: 1.4;
+}
+
+.container:hover .extrachoco {
+    display: block;
+}
+
+.heading {
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px rgb(88, 236, 62);
+}
+
