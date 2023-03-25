@@ -84,28 +84,44 @@
     container.addEventListener("click", () => {
       switch (counter) {
         case 1:
-          document.querySelector(".choco1").style.scale = "1.25";
+          document.querySelector(".choco1").style.scale = "1.5";
+          document.querySelector(".choco1").style.zIndex = "3";
+          document.querySelector(".choco2").style.zIndex = "0";
+          document.querySelector(".choco4").style.zIndex = "0";
+          document.querySelector(".choco5").style.zIndex = "0";
           document.querySelector(".choco2").style.scale = ".95";
           document.querySelector(".choco4").style.scale = ".95";
           document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 2:
-          document.querySelector(".choco2").style.scale = "1.25";
+          document.querySelector(".choco2").style.scale = "1.5";
+          document.querySelector(".choco2").style.zIndex = "3";
+          document.querySelector(".choco1").style.zIndex = "0";
+          document.querySelector(".choco4").style.zIndex = "0";
+          document.querySelector(".choco5").style.zIndex = "0";
           document.querySelector(".choco1").style.scale = ".95";
           document.querySelector(".choco4").style.scale = ".95";
           document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 3:
-          document.querySelector(".choco4").style.scale = "1.25";
+          document.querySelector(".choco4").style.scale = "1.5";
+          document.querySelector(".choco4").style.zIndex = "3";
+          document.querySelector(".choco1").style.zIndex = "0";
+          document.querySelector(".choco2").style.zIndex = "0";
+          document.querySelector(".choco5").style.zIndex = "0";
           document.querySelector(".choco1").style.scale = ".95";
           document.querySelector(".choco2").style.scale = ".95";
           document.querySelector(".choco5").style.scale = ".95";
           counter++;
           break;
         case 4:
-          document.querySelector(".choco5").style.scale = "1.25";
+          document.querySelector(".choco5").style.scale = "1.5";
+          document.querySelector(".choco5").style.zIndex = "3";
+          document.querySelector(".choco1").style.zIndex = "0";
+          document.querySelector(".choco2").style.zIndex = "0";
+          document.querySelector(".choco5").style.zIndex = "0";
           document.querySelector(".choco1").style.scale = ".95";
           document.querySelector(".choco2").style.scale = ".95";
           document.querySelector(".choco4").style.scale = ".95";
