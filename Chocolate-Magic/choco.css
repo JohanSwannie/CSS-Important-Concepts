@@ -44,25 +44,25 @@ html {
 }
 
 .container:hover .choco1 {
-    transform: translate(-700px) rotate(360deg) scale(.75);
+    transform: translate(-500px) rotate(360deg) scale(.75);
     transition: 4s ease;
     filter: hue-rotate(4rad);
 }
 
 .container:hover .choco2 {
-    transform: translate(-350px) rotate(360deg);
+    transform: translate(-280px) rotate(360deg);
     transition: 4s ease;
     filter: hue-rotate(14rad);
 }
 
 .container:hover .choco4 {
-    transform: translate(350px) rotate(360deg);
+    transform: translate(280px) rotate(360deg);
     transition: 4s ease;
     filter: hue-rotate(14rad);
 }
 
 .container:hover .choco5 {
-    transform: translate(700px) rotate(360deg) scale(.75);
+    transform: translate(500px) rotate(360deg) scale(.75);
     transition: 4s ease;
     filter: hue-rotate(4rad);
 }
