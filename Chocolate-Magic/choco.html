@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="choco.css" />
+    <title>Chocolate Magic</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading"></h1>
+      <div class="choco choco1">
+        <img
+          src="https://s7d2.scene7.com/is/image/hersheysassets/0_34000_04025_4_701_04023_013_Item_Front?fmt=png-alpha&hei=908"
+          width="350"
+          height="350"
+          alt="choccer1"
+        />
+      </div>
+      <div class="choco choco2">
+        <img
+          src="https://s7d2.scene7.com/is/image/hersheysassets/0_34000_04025_4_701_04023_013_Item_Front?fmt=png-alpha&hei=908"
+          width="350"
+          height="350"
+          alt="choccer2"
+        />
+      </div>
+      <div class="choco choco3">
+        <img
+          src="https://s7d2.scene7.com/is/image/hersheysassets/0_34000_04025_4_701_04023_013_Item_Front?fmt=png-alpha&hei=908"
+          width="500"
+          height="500"
+          alt="choccer3"
+        />
+      </div>
+      <div class="choco choco4">
+        <img
+          src="https://s7d2.scene7.com/is/image/hersheysassets/0_34000_04025_4_701_04023_013_Item_Front?fmt=png-alpha&hei=908"
+          width="350"
+          height="350"
+          alt="choccer4"
+        />
+      </div>
+      <div class="choco choco5">
+        <img
+          src="https://s7d2.scene7.com/is/image/hersheysassets/0_34000_04025_4_701_04023_013_Item_Front?fmt=png-alpha&hei=908"
+          width="350"
+          height="350"
+          alt="choccer5"
+        />
+      </div>
+      <div class="extrachoco">
+        <img
+          src="https://media3.giphy.com/media/68pcMCx5eZ7oIp4i8f/giphy.gif?cid=6c09b952dav6ks8nej05xglfue2ge01fb0sml3145t53zzzo&rid=giphy.gif&ct=s"
+          width="350"
+          height="350"
+          alt="extrachoco"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".container").addEventListener("mouseenter", () => {
+      document.querySelector(".heading").innerText = "Chocolate Magic Started";
+      document.querySelector(".heading").style.fontFamily =
+        "'Train One', cursive";
+    });
+    document.querySelector(".container").addEventListener("mouseleave", () => {
+      document.querySelector(".heading").innerText = "Chocolate Magic Ended";
+      document.querySelector(".heading").style.fontFamily =
+        "'Alkatra', cursive";
+    });
+  </script>
+</html>
