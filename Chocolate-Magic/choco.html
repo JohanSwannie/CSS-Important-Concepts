@@ -12,6 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="choco.css" />
     <title>Chocolate Magic</title>
   </head>
@@ -69,15 +85,43 @@
     </div>
   </body>
   <script>
-    document.querySelector(".container").addEventListener("mouseenter", () => {
-      document.querySelector(".heading").innerText = "Chocolate Magic Started";
-      document.querySelector(".heading").style.fontFamily =
-        "'Train One', cursive";
+    const header = document.querySelector(".heading");
+    const container = document.querySelector(".container");
+    let counter = 1;
+
+    container.addEventListener("mouseenter", () => {
+      header.innerText = "Chocolate Magic Started";
+      header.style.fontFamily = "'Train One', cursive";
     });
-    document.querySelector(".container").addEventListener("mouseleave", () => {
-      document.querySelector(".heading").innerText = "Chocolate Magic Ended";
-      document.querySelector(".heading").style.fontFamily =
-        "'Alkatra', cursive";
+    container.addEventListener("mouseleave", () => {
+      header.innerText = "Chocolate Magic Ended";
+      header.style.fontFamily = "'Alkatra', cursive";
+    });
+    container.addEventListener("click", () => {
+      switch (counter) {
+        case 1:
+          header.style.color = "steelblue";
+          header.style.fontFamily = "'Tangerine', cursive";
+          counter++;
+          break;
+        case 2:
+          header.style.color = "lime";
+          header.style.fontFamily = "'Fredericka the Great', cursive";
+          counter++;
+          break;
+        case 3:
+          header.style.color = "rebeccapurple";
+          header.style.fontFamily = "'Style Script', cursive";
+          counter++;
+          break;
+        case 4:
+          header.style.color = "crimson";
+          header.style.fontFamily = "'Niconne', cursive";
+          counter = 1;
+          break;
+        default:
+          alert("ERROR");
+      }
     });
   </script>
 </html>
