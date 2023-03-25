@@ -32,7 +32,7 @@ html {
     position: absolute;
     top: var(--y-axis1);
     left: var(--x-axis1);
-    z-index: 1;
+    z-index: 4;
 }
 
 .extrachoco {
@@ -40,31 +40,31 @@ html {
     position: absolute;
     top: var(--y-axis2);
     left: var(--x-axis2);
-    z-index: 2;
+    z-index: 5;
 }
 
 .container:hover .choco1 {
-    transform: translate(-500px) rotate(360deg) scale(.75);
+    transform: translate(-400px) rotate(360deg) scale(.75);
     transition: 4s ease;
     filter: hue-rotate(4rad);
 }
 
 .container:hover .choco2 {
-    transform: translate(-280px) rotate(360deg);
+    transform: translate(-250px) rotate(360deg);
     transition: 4s ease;
     filter: hue-rotate(14rad);
 }
 
 .container:hover .choco4 {
-    transform: translate(280px) rotate(360deg);
+    transform: translate(250px) rotate(360deg);
     transition: 4s ease;
-    filter: hue-rotate(14rad);
+    filter: hue-rotate(1100rad);
 }
 
 .container:hover .choco5 {
-    transform: translate(500px) rotate(360deg) scale(.75);
+    transform: translate(400px) rotate(360deg) scale(.75);
     transition: 4s ease;
-    filter: hue-rotate(4rad);
+    filter: hue-rotate(615rad);
 }
 
 .container:hover .heading {
